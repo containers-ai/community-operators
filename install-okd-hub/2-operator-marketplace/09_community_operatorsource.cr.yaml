@@ -1,0 +1,65 @@
+# The general community-operators OperatorSource
+apiVersion: "marketplace.redhat.com/v1alpha1"
+kind: "OperatorSource"
+metadata:
+  name: "community-operators"
+  namespace: "openshift-marketplace"
+  labels:
+    opsrc-provider: community
+spec:
+  type: appregistry
+  endpoint: "https://quay.io/cnr"
+  registryNamespace: "community-operators"
+  displayName: "Community Operators"
+  publisher: "Red Hat"
+
+# The ProphetStor development community-operators OperatorSource
+---
+apiVersion: "marketplace.redhat.com/v1alpha1"
+kind: "OperatorSource"
+metadata:
+  name: "community-operators"
+  namespace: "openshift-marketplace"
+  labels:
+    opsrc-provider: community
+spec:
+  type: appregistry
+  endpoint: "https://quay.io/cnr"
+  registryNamespace: "prophetstor"
+  displayName: "Community Operators"
+  publisher: "Prophet Stor"
+
+---
+# The output of OperatorSource object after running openshift-marketplace/community-operators 
+apiVersion: marketplace.redhat.com/v1alpha1
+kind: OperatorSource
+metadata:
+  selfLink: >-
+    /apis/marketplace.redhat.com/v1alpha1/namespaces/openshift-marketplace/operatorsources/community-operators
+  resourceVersion: '12708149'
+  name: community-operators
+  uid: 99d9c53b-44c9-11e9-9479-0240af26da74
+  creationTimestamp: '2019-03-12T13:20:27Z'
+  generation: 1
+  namespace: openshift-marketplace
+  finalizers:
+    - finalizer.operatorsources.marketplace.redhat.com
+  labels:
+    opsrc-provider: community
+spec:
+  authorizationToken: {}
+  displayName: Community Operators
+  endpoint: 'https://quay.io/cnr'
+  publisher: Prophet Stor
+  registryNamespace: prophetstor
+  type: appregistry
+status:
+  currentPhase:
+    lastTransitionTime: '2019-03-12T13:27:30Z'
+    lastUpdateTime: '2019-03-12T13:27:30Z'
+    phase:
+      message: The object has been successfully reconciled
+      name: Succeeded
+  packages: etcd-operator
+
+# It can reload Operators with "status: -> status: {}"
