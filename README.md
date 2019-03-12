@@ -29,6 +29,10 @@ Similarly, to update your operator you need to submit a PR with any changes to y
 
 New Operators are reviewed manually by the maintainers to ensure that contain all [required information][required-fields]. In the near future, automation will be added to check for required values and run a suite of automated tests against a live cluster.
 
+## References
+
+[Operator Courier](https://github.com/operator-framework/operator-courier) is used to build, validate and push Operator Artifacts. [pull-from-quay](scripts/pull-from-quay) is used to pull Operator Artifacts.
+
 ## Reporting Bugs
 
 Report bugs using the project issue tracker.
