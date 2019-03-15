@@ -15,7 +15,7 @@ spec:
     spec:
       serviceAccountName: marketplace-operator
       nodeSelector:
-        node-role.kubernetes.io/master: ""
+        beta.kubernetes.io/os: linux
       priorityClassName: "system-cluster-critical"
       tolerations:
       - operator: Exists
