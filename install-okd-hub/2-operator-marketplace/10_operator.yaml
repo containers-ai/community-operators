@@ -30,7 +30,7 @@ spec:
           command:
           - marketplace-operator
           args:
-          - -registryServerImage=quay.io/openshift/origin-operator-registry
+          - -registryServerImage=quay.io/openshift/origin-operator-registry:latest
           imagePullPolicy: IfNotPresent
           livenessProbe:
             httpGet:
