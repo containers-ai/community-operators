@@ -8,7 +8,7 @@ metadata:
     categories: "OpenShift Optional, AI/Machine Learning"
     certified: "false"
     repository: https://quay.io/repository/prophetstor/federatorai-operator
-    containerImage: prophetstor/federatorai-operator:0.0.1
+    containerImage: quay.io/prophetstor/federatorai-operator:v0.0.1
     createdAt: 2019-03-19T00:59:59Z
     description: FederatorAI Operator provides easy configuration and management of AI-based Kubernetes resource orchestrator
     support: ProphetStor Data Services, Inc.
