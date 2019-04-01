@@ -5,7 +5,7 @@ metadata:
   namespace: placeholder
   annotations:
     capabilities: Seamless Upgrades
-    categories: "OpenShift Optional, AI/Machine Learning"
+    categories: "AI/Machine Learning, OpenShift Optional"
     certified: "false"
     repository: https://quay.io/repository/prophetstor/federatorai-operator
     containerImage: quay.io/prophetstor/federatorai-operator:v0.0.1
