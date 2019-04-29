@@ -146,6 +146,8 @@ spec:
           - namespaces
           verbs:
           - get
+          - list
+          - watch
         - apiGroups:
           - ""
           resources:
@@ -196,6 +198,7 @@ spec:
           - list
           - update
           - watch
+          - delete
         - apiGroups:
           - rbac.authorization.k8s.io
           resources:
@@ -237,12 +240,20 @@ spec:
           - list
           - update
           - watch
+          - delete
         - apiGroups:
           - apps.openshift.io
           resources:
           - deploymentconfigs
           verbs:
           - "*"
+        - apiGroups:
+          - ""
+          resources:
+          - pods
+          verbs:
+          - delete
+          - patch
       permissions:
       - serviceAccountName: federatorai-operator
         rules:
